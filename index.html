@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>BBI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 </head>
 <body>
 <header>
     <div class="container">
-    <div class="logo"><img src="" alt=""></div>
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="marketing.html">Маркетинг</a></li>
-            <li><a href="partners.html">Партнерам</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-    </div>
-    <div class="lang">
-        <img src="#" alt="">
-        <button>RU</button>
-    </div>
-    <div class="connect">
-        <a href="#">Подключиться</a>
-    </div>
+        <div class="topHeader">
+            <div class="logo">
+                <div>
+                    <img src="" alt="">
+                    <span>BUSINESS</span><span>BOT</span><span>INCUBATOR</span>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="marketing.html">Маркетинг</a></li>
+                    <li><a href="partners.html">Партнерам</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="lang">
+                <form action="">
+                    <select name="language" id="language">
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                    </select>
+                </form>
+            </div>
+            <div class="connect">
+                <span class="icon-telegram"><a href="#">Подключиться</a></span>
+            </div>
+            <div class="banner">
+                <div class="banner">
+                    <div class="companyName"><span>B</span><span>B</span><span>I</span></div>
+                    <h1>Мир инновационных технологий</h1>
+                    <div class="connect"><a href="">Подключиться</a></div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <div class="content">
-    <div class="banner">
-        <div class="container">
-            <div class="topBanner">
-                <div class="companyName"><span>B</span><span>B</span><span>I</span></div>
-                <h1>Мир инновационных технологий</h1>
-                <div class="bannerConnect"><a href="">Подключиться</a></div>
-            </div>
-            <div class="lineChange">
+    <div class="rates">
+        <div class="lineChange">
+            <div class="container">
                 <div class="profitLine">
                     <p>Линия</p>
                     <p>Прибыли</p>
@@ -49,239 +64,313 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="rates">
-        <div class="container">
-            <div class="test">
-                <div><p>TEST</p></div>
-                <div><p>1.0%</p></div>
-                <div><p>В сутки</p></div>
-                <div><p>Срок: 15 дней</p></div>
-                <div><p>Min - Max: 5$-50$</p></div>
-                <div><p>Прибыль: 115%</p></div>
-                <div><p>Бонусный апгрейд: 0.05%</p>
-                    <button>Подключиться</button></div>
-            </div>
-            <div class="power">
-                <div><p>Power</p></div>
-                <div><p>1.5%</p></div>
-                <div><p>В сутки</p></div>
-                <div><p>Срок: 30 дней</p></div>
-                <div><p>Min - Max: 51$-100$</p></div>
-                <div><p>Прибыль: 145%</p></div>
-                <div><p>Бонусный апгрейд: 0.20%</p>
-                    <button>Подключиться</button></div>
-            </div>
-            <div class="ultimatum">
-                <div><p>ULTIMATUM</p></div>
-                <div><p>2.0%</p></div>
-                <div><p> сутки</p></div>
-                <div><p>Срок: 45 дней</p></div>
-                <div><p>Min - Max: 101$-500$</p></div>
-                <div><p>Прибыль: 190%</p></div>
-                <div><p>Бонусный апгрейд: 0.50%</p>
-                    <button>Подключиться</button></div>
-            </div>
-            <div class="bit">
-                <div><p>BIT</p></div>
-                <div><p>1.0%</p></div>
-                <div><p>В сутки</p></div>
-                <div><p>Срок: 15 дней</p></div>
-                <div><p>Min - Max: 0.015btc-0.140btc</p></div>
-                <div><p>Прибыль: 115%</p></div>
-                <div><p>Бонусный апгрейд: 0.10%</p>
-                    <button>Подключиться</button></div>
+        <div class="ratesItems">
+            <div class="container">
+                <div class="test">
+                    <div><span class="icon-robot"></span><span>TEST</span></div>
+                    <div>
+                        <div><span>1.0% <br><span>В сутки</span> </span></div>
+                        <div><span>Срок: 15 дней</span></div>
+                        <div><span>Min - Max: 5$ - 50$</span></div>
+                        <div><span>Прибыль: 115%</span></div>
+                        <div>Бонустный апгрейд: 0.05%</div>
+                        <button>Подключиться</button>
+                    </div>
+                </div>
+                <div class="power">
+                    <div><span class="icon-robot"></span><span>POWER</span></div>
+                    <div>
+                        <div><span>1.5% <br><span>В сутки</span> </span></div>
+                        <div><span>Срок: 30 дней</span></div>
+                        <div><span>Min - Max: 51$ - 100$</span></div>
+                        <div><span>Прибыль: 145%</span></div>
+                        <div>Бонустный апгрейд: 0.20%</div>
+                        <button>Подключиться</button>
+                    </div>
+                </div>
+                <div class="ultimatum">
+                    <div><span class="icon-robot"></span><span>ULTIMATUM</span></div>
+                    <div>
+                        <div><span>2.0% <br><span>В сутки</span> </span></div>
+                        <div><span>Срок: 40 дней</span></div>
+                        <div><span>Min - Max: 101$ - 500$</span></div>
+                        <div><span>Прибыль: 190%</span></div>
+                        <div>Бонустный апгрейд: 0.50%</div>
+                        <button>Подключиться</button>
+                    </div>
+                </div>
+                <div class="bit">
+                    <div><span class="icon-robot"></span><span>BIT</span></div>
+                    <div>
+                        <div><span>1.0% <br><span>В сутки</span> </span></div>
+                        <div><span>Срок: 40 дней</span></div>
+                        <div><span>Min - Max: 0.015 btc - 0.140 btc</span></div>
+                        <div><span>Прибыль: 115%</span></div>
+                        <div>Бонустный апгрейд: 0.10%</div>
+                        <button>Подключиться</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="calculator">
         <div class="container">
             <div class="calc_left">
-                <h1>Калькулятор прибыли</h1>
-                <h4>Расчитайте свою прибыль</h4>
-                <span>Выбиите линию</span>
-                <div class="lines_list">
-                    <ul>
-                        <li>Линия прибыли</li>
-                        <li>Линия стабильности</li>
-                        <li>Линия бесконечности</li>
-                    </ul>
+                <div>
+                    <h1>Калькулятор прибыли</h1>
+                    <h4>Расчитайте свою прибыль</h4>
                 </div>
-                <span>Выбиите бота</span>
-                <div class="bots_list">
-                    <ul>
-                        <li>Power 1.5% в сутки</li>
-                        <li>Test 1.0% в сутки</li>
-                        <li>Ultimatum 2.0% в сутки</li>
-                        <li>BIT 1.0% в сутки</li>
-                    </ul>
-                </div>
-                <label for="sum">Введите сумму:</label>
-                <input type="text" id="sum">
-                <div class="sum_change"></div>
+                <form action="">
+                    <fieldset>
+                        <label for="calcLine">Выберите линию:</label>
+                        <select name="" id="calcLine">
+                            <option value="profit">Линия прибыли</option>
+                            <option value="stability">Линия стабильности</option>
+                            <option value="infinity">Линия бесконечности</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="calcRates">Выберите бота:</label>
+                        <select name="" id="calcRates">
+                            <option value="test">TEST 1.0% в сутки</option>
+                            <option selected value="power">POWER 1.5% в сутки</option>
+                            <option value="ultimate">ULTIMATUM 2.0% в сутки</option>
+                            <option value="bit">BIT 1.0% в сутки</option>
+                        </select>
+                    </fieldset>
+                </form>
+                <form action="">
+                    <fieldset>
+                        <label for="sum">Введите сумму:</label>
+                        <input type="text" id="sum" placeholder="83">
+                    </fieldset>
+                    <div class="sum_change">
+                    </div>
+                </form>
+
             </div>
             <div class="calc_right">
-                <h2>Ваша прибыль:</h2>
-                <span>120.59$</span>
-                <div class="connect_calc"><a href="">Подключиться</a></div>
+                <div>
+                    <h2>Ваша прибыль:</h2>
+                    <span>120.59$</span>
+                </div>
+                <div class="connect_calc"><span class="icon-telegram"><a href="">Подключиться</a></span></div>
             </div>
         </div>
     </div>
     <div class="certificate">
         <div class="container">
-            <h1>Business bot incubator</h1>
-            <h4>Мир инновационных технологий!</h4>
-            <p>Инновационные идеи и технологии давно и прочно вошли в жизнь
-            пользователей Интернет. <span>Business Bot Incubator (BBI)</span> был
-            создан в соответствии с современными
-            тенденциями. Это новый этап в мире
-            инвестиций. Каждый сомневающийся в своих
-            решениях человек может создать неверный выбор.
-            Но что если вместо человека будет принимать решения
-            робот, работающий в рамках одного алгоритма?</p>
-            <p>Эта система облегчит жизнь многих инвесторов.
-            Программные боты будут обеспечивать аюсолютную безопасность
-            проведения платежей и полную защиту средств, размещённых на
-            балансе Вашего аккаунта! <span>Основная задача наших
-            разработчиков - дальнейшее развитие BBI-ботов.</span>
-            Только взаимный успех принесет новое всеобщее развитие
-            и процветание.</p>
-            <img src="#" alt="сертификат">
+            <div>
+                <h2>Business bot incubator</h2>
+                <h4>Мир инновационных технологий!</h4>
+            </div>
+            <div>
+                <div>
+                    <p>Инновационные идеи и технологии давно и прочно вошли в жизнь
+                        пользователей Интернет. <span>Business Bot Incubator (BBI)</span> был
+                        создан в соответствии с современными
+                        тенденциями. Это новый этап в мире
+                        инвестиций. Каждый сомневающийся в своих
+                        решениях человек может создать неверный выбор.
+                        Но что если вместо человека будет принимать решения
+                        робот, работающий в рамках одного алгоритма?</p>
+                    <p>Эта система облегчит жизнь многих инвесторов.
+                        Программные боты будут обеспечивать аюсолютную безопасность
+                        проведения платежей и полную защиту средств, размещённых на
+                        балансе Вашего аккаунта! <span>Основная задача наших
+                    разработчиков - дальнейшее развитие BBI-ботов.</span>
+                        Только взаимный успех принесет новое всеобщее развитие
+                        и процветание.</p>
+                </div>
+                <div>
+                    <img src="#" alt="сертификат">
+                </div>
+            </div>
         </div>
     </div>
     <div class="advantages">
         <div class="container">
-            <h1>Преимущества компании</h1>
-            <h4>Почему выбирают нас?</h4>
-            <p>Инвестиции в BBI выгодно</p>
-            <p>Здесь о Ваших средствах заботятся и грамотно ими управляют уникальные BBI-боты.
-            Каждый BBI-бот оснащён бонусным апгрейдом;
-            который способствует увеличению получаемой прибыли!</p>
-            <div class="phone_left">
-                <p>Уникальные инвестиционные боты</p>
-                <p>Партнёрская программа до 10%</p>
-                <p>Начисления каждые 24 часа</p>
+            <div>
+                <div>
+                    <h1>Преимущества компании</h1>
+                    <h4>Почему выбирают нас?</h4>
+                </div>
+                <div>
+                    <p>Инвестиции в BBI выгодно</p>
+                    <p>Здесь о Ваших средствах заботятся и грамотно ими управляют уникальные BBI-боты.
+                        Каждый BBI-бот оснащён бонусным апгрейдом;
+                        который способствует увеличению получаемой прибыли!</p>
+                </div>
             </div>
-            <div class="phone_right">
-                <p>Квалифицированная поддержка</p>
-                <p>Вывод средств в режиме инстант</p>
-                <p>Возможность увеличения прибыли</p>
+            <div>
+                <ul>
+                    <li><span>УНИКАЛЬНЫЕ ИНВЕСТИЦИОННЫЕ БОТЫ</span><span class="icon-robot"></span></li>
+                    <li><span>ПАРТНЕРСКАЯ ПРОГРАММА ДО 10%</span><span class="icon-peoples"></span></li>
+                    <li><span>НАЧИСЛЕНИЯ КАЖДЫЕ 24 ЧАСА</span><span class="icon-ring"></span></li>
+                </ul>
+                <div class="phoneAdv">
+                    <div class="logo">
+                        <div>
+                            <img src="" alt="">
+                            <span>BUSINESS</span><span>BOT</span><span>INCUBATOR</span>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><span class="icon-gear"></span><span>КВАЛИФИЦИРОВАННАЯ ПОДДЕРЖКА</span></li>
+                    <li><span class="icon-pocket"></span><span>ВЫВОД СРЕДСТВ В РЕЖИМЕ ИНСТАНТ</span></li>
+                    <li><span class="icon-lines_adv"></span><span>ВОЗМОЖНОСТЬ УВЕЛИЧЕНИЯ ПРИБЫЛИ</span></li>
+                </ul>
             </div>
         </div>
     </div>
     <div class="affiliate">
         <div class="container">
-            <h1>Партнерская программа</h1>
-            <div class="aff_item1">
-                <p>Размер реферальных начислений на начальном этапе составляет
-                <span>5%</span> от вклада вашего партнера.</p>
+            <div>
+                <h1>Партнерская программа</h1>
+                <div class="affItems">
+                    <ul>
+                        <li><p>Размер реферальных начислений на начальном этапе составляет
+                            <span>5%</span> от вклада вашего партнера.</p></li>
+                        <li><p>Для тех, кто сделает оборот структуры выше 500$, BBI-боты
+                            сгенерируют повышенный процент и увеличат размер начислений на
+                            <span>1%</span></p></li>
+                        <li><p>Каждые последующие 500$ будут увеличивать Ваш партнёрский процент
+                            начислений на 1%, максимальная отметка достигает <span>10%</span></p></li>
+                    </ul>
+                </div>
+                <div class="connect_calc"><span class="icon-telegram"><a href="">Подключиться</a></span></div>
             </div>
-            <div class="aff_item2">
-                <p>Для тех, кто сделает оборот структуры выше 500$, BBI-боты
-                сгенерируют повышенный процент и увеличат размер начислений на
-                <span>1%</span></p>
-            </div>
-            <div class="aff_item3">
-                <p>Каждые последующие 500$ будут увеличивать Ваш партнёрский процент
-                начислений на 1%, максимальная отметка достигает <span>10%</span></p>
-            </div>
-            <div class="connect_calc"><a href="">Подключиться</a></div>
         </div>
     </div>
     <div class="news">
         <div class="container">
-            <h1>Новости компании</h1>
-            <h4>Последние события</h4>
-            <div class="news_list">
-                <div class="current_news">
-                    <span class="date">11 Ноя</span>
-                    <h4>Линия бесконечности. Разделение депозитов.</h4>
-                    <p>В процессе изучения новых программных кодов, Ботами была освоена новая ветка депозитов!...
-                        <a href="#">Подробнее ></a></p>
-                    <p>Ваш бот BBI</p>
+            <div>
+                <div>
+                    <h2>Новости компании</h2>
+                    <h4>Последние события</h4>
                 </div>
-                <div class="first_news">
-                    <div>
-                        <span class="date">07 Ноя</span>
-                        <h4>Новый бот BIT. Партнерская программа.</h4>
-                        <p>Ваш бот BBI</p>
+                <div class="news_list">
+                    <div class="current_news">
+                        <span class="date">11 Ноя</span>
+                        <h4>Линия бесконечности. Разделение депозитов.</h4>
+                        <p>В процессе изучения новых программных кодов, Ботами была освоена новая ветка депозитов!...
+                            <a href="#">Подробнее ></a></p>
+                        <span class="icon-robot"></span><span>Ваш бот BBI</span>
                     </div>
-                    <p>Сегодня совместными усилиями Боты завершили все части и наброски программных кодов, в течении
-                    их напряженной работы проявилось что-то нечто яркого цвета, а в итоге объединения программного
-                    кода воссоздался некто. <a href="#">Подробнее ></a></p>
-                </div>
-                <div class="second_news">
-                    <div>
-                    <span class="date">02 Ноя</span>
-                    <h4>Ссылки.Чат Eng.Раздел</h4>
-                    <p>Ваш бот BBI</p>
+                    <div class="newsItems">
+                        <div class="first_news">
+                            <div>
+                                <span class="date">07 Ноя</span>
+                                <h4>Новый бот BIT. Партнерская программа.</h4>
+                                <span class="icon-robot"></span><span>Ваш бот BBI</span>
+                            </div>
+                            <div>
+                                <p>Сегодня совместными усилиями Боты завершили все части и наброски программных кодов, в
+                                    течении
+                                    их напряженной работы проявилось что-то нечто яркого цвета, а в итоге объединения
+                                    программного
+                                    кода воссоздался некто. <a href="#">Подробнее ></a></p>
+                            </div>
+                        </div>
+                        <div class="second_news">
+                            <div>
+                                <span class="date">02 Ноя</span>
+                                <h4>Ссылки.Чат Eng.Раздел</h4>
+                                <span class="icon-robot"></span><span>Ваш бот BBI</span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <div class="third_news">
+                            <div>
+                                <span class="date">31 окт</span>
+                                <h4>Business Bot Incubator</h4>
+                                <span class="icon-robot"></span><span>Ваш бот BBI</span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="third_news">
-                    <div>
-                    <span class="date">31 окт</span>
-                    <h4>Business Bot Incubator</h4>
-                    <p>Ваш бот BBI</p>
-                    </div>
-                </div>
+                <button>Все новости</button>
             </div>
-            <button>Все новости</button>
         </div>
     </div>
     <div class="payments">
-    <div class="container">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
+        <div class="container">
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 <footer>
     <div class="container">
-        <div class="connect_calc"><a href="">Подключиться</a></div>
+        <div class="connect_calc"><span class="icon-telegram"><a href="">Подключиться</a></span></div>
         <div class="copyright">
-            <img src="" alt="">
-            <p>Copyright ©2016 - BUSINESS</p>
-            <p>BOT INCUBATOR - Мир</p>
-            <p>инновационных технолорий.</p>
+            <div class="logo">
+                <div>
+                    <img src="" alt="">
+                    <span>BUSINESS</span><span>BOT</span><span>INCUBATOR</span>
+                </div>
+            </div>
+            <div>
+                <span>
+                Copyright © 2016 - BUSINESS <br>BOT INCUBATOR - Мир <br>инновационных технологий.
+                </span>
+            </div>
         </div>
         <div class="address">
-            <p>ADDRESS:</p>
-            <p>137,Willbraham Road Manchester</p>
-            <p>M14 7DS</p>
-            <p>UNITED KINGDOM</p>
-            <p>10416054</p>
+            <span class="icon-earth"></span><span> Address: <br></span>
+            <div>
+                <span>
+                    137, Wilbraham Road Manchester<br>
+                    M14 7DS<br>
+                    UNITED KINGDOM<br>
+                    Registered in UNITED KINGDOM<br>
+                    Number 10416054
+                </span>
+            </div>
         </div>
         <div class="social">
-            <ul>
-                <li>
-                    <p>Support team:</p>
-                    <p>@Business_Bot_Incubator</p>
-                </li>
-                <li>
-                    <p>E-mail:</p>
-                    <p>support@bbi.world</p>
-                </li>
-                <li>
-                    <p>Vkontakte:</p>
-                    <p>business_bot_incubator</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <p>BBI CHAT RUS:</p>
-                    <p>telegram_bbi_chat_rus</p>
-                </li>
-                <li>
-                    <p>BBI CHAT ENG</p>
-                    <p>telegram_bbi_chat_eng</p>
-                </li>
-                <li>
-                    <p>BBI CHAT ХИНДИ (हिन्दी चैट):</p>
-                    <p>telegram_bbi_chat_eng</p>
-                </li>
-            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <span class="icon-telegram"></span><span>Support team:<br></span>
+                        <span>@Business_Bot_Incubator</span>
+                    </li>
+                    <li>
+                        <span class="icon-mail-envelope-closed"></span><span>E-mail:<br></span>
+                        <spanp>support@bbi.world</spanp>
+                    </li>
+                    <li>
+                        <span class="icon-vk"></span><span>Vkontakte:<br></span>
+                        <span>business_bot_incubator</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span class="icon-telegram"></span><span>BBI CHAT RUS:<br></span>
+                        <span>telegram_bbi_chat_rus</span>
+                    </li>
+                    <li>
+                        <span class="icon-telegram"></span><span>BBI CHAT ENG:<br></span>
+                        <span>telegram_bbi_chat_eng</span>
+                    </li>
+                    <li>
+                        <span class="icon-telegram"></span><span>BBI CHAT ХИНДИ (हिन्दी चैट):<br></span>
+                        <span>telegram_bbi_chat_eng</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="menu">
