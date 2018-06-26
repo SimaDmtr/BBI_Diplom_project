@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>BBI</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
     <div class="container">
         <div class="topHeader">
             <div class="logo">
-                <div>
+                <div class="logo">
                     <img src="" alt="">
+                    <div class="logoWords">
                     <span>BUSINESS</span><span>BOT</span><span>INCUBATOR</span>
+                    </div>
                 </div>
             </div>
             <div class="menu">
@@ -26,21 +29,17 @@
                 </ul>
             </div>
             <div class="lang">
-                <form action="">
-                    <select name="language" id="language">
-                        <option value="ru">RU</option>
-                        <option value="en">EN</option>
-                    </select>
-                </form>
             </div>
             <div class="connect">
-                <span class="icon-telegram"><a href="#">Подключиться</a></span>
+                <span class="icon-telegram"></span><a href="#">Подключиться</a>
             </div>
             <div class="banner">
-                <div class="banner">
+                <div>
                     <div class="companyName"><span>B</span><span>B</span><span>I</span></div>
                     <h1>Мир инновационных технологий</h1>
-                    <div class="connect"><a href="">Подключиться</a></div>
+                    <div class="connect bannerConnect">
+                        <span class="icon-telegram"></span><a href="#">Подключиться</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,63 +50,71 @@
         <div class="lineChange">
             <div class="container">
                 <div class="profitLine">
-                    <p>Линия</p>
-                    <p>Прибыли</p>
+                    <span class="firstLine">Линия</span>
+                    <span class="secondLine">Прибыли</span>
                 </div>
                 <div class="stabLine">
-                    <p>Линия</p>
-                    <p>Стабильности</p>
+                    <span class="firstLine">Линия</span>
+                    <span class="secondLine">Стабильности</span>
                 </div>
                 <div class="infLine">
-                    <p>Линия</p>
-                    <p>Бесконечноти</p>
+                    <span class="firstLine">Линия</span>
+                    <span class="secondLine">Бесконечноти</span>
+                </div>
                 </div>
             </div>
-        </div>
         <div class="ratesItems">
             <div class="container">
-                <div class="test">
-                    <div><span class="icon-robot"></span><span>TEST</span></div>
-                    <div>
-                        <div><span>1.0% <br><span>В сутки</span> </span></div>
+                <div class="card">
+                    <div class="cardHeader1"><span class="icon-robot"></span><span class="cardName">TEST</span></div>
+                    <div class="percent"><span>1.0%<span>В сутки</span> </span></div>
+                    <div class="itemsContent">
                         <div><span>Срок: 15 дней</span></div>
                         <div><span>Min - Max: 5$ - 50$</span></div>
                         <div><span>Прибыль: 115%</span></div>
-                        <div>Бонустный апгрейд: 0.05%</div>
-                        <button>Подключиться</button>
+                        <div class="upgrade">
+                            <span>Бонустный апгрейд: <span>0.05%</span></span>
+                            <a href="">Подключиться</a>
+                        </div>
                     </div>
                 </div>
-                <div class="power">
-                    <div><span class="icon-robot"></span><span>POWER</span></div>
-                    <div>
-                        <div><span>1.5% <br><span>В сутки</span> </span></div>
+                <div class="card">
+                    <div class="cardHeader2"><span class="icon-robot"></span><span class="cardName">POWER</span></div>
+                    <div class="percent"><span>1.5%<span>В сутки</span> </span></div>
+                    <div class="itemsContent">
                         <div><span>Срок: 30 дней</span></div>
                         <div><span>Min - Max: 51$ - 100$</span></div>
                         <div><span>Прибыль: 145%</span></div>
-                        <div>Бонустный апгрейд: 0.20%</div>
-                        <button>Подключиться</button>
+                        <div class="upgrade">
+                            <span>Бонустный апгрейд: 0.20%</span>
+                            <a href="">Подключиться</a>
+                        </div>
                     </div>
                 </div>
-                <div class="ultimatum">
-                    <div><span class="icon-robot"></span><span>ULTIMATUM</span></div>
-                    <div>
-                        <div><span>2.0% <br><span>В сутки</span> </span></div>
+                <div class="card">
+                    <div class="cardHeader3"><span class="icon-robot"></span><span class="cardName">ULTIMATUM</span></div>
+                    <div class="percent"><span>2.0%<span>В сутки</span> </span></div>
+                    <div class="itemsContent">
                         <div><span>Срок: 40 дней</span></div>
                         <div><span>Min - Max: 101$ - 500$</span></div>
                         <div><span>Прибыль: 190%</span></div>
-                        <div>Бонустный апгрейд: 0.50%</div>
-                        <button>Подключиться</button>
+                        <div class="upgrade">
+                            <span>Бонустный апгрейд: 0.50%</span>
+                            <a href="">Подключиться</a>
+                        </div>
                     </div>
                 </div>
-                <div class="bit">
-                    <div><span class="icon-robot"></span><span>BIT</span></div>
-                    <div>
-                        <div><span>1.0% <br><span>В сутки</span> </span></div>
+                <div class="card">
+                    <div class="cardHeader4"><span class="icon-robot"></span><span class="cardName">BIT</span></div>
+                    <div class="percent"><span>1.0%<span>В сутки</span> </span></div>
+                    <div class="itemsContent">
                         <div><span>Срок: 40 дней</span></div>
                         <div><span>Min - Max: 0.015 btc - 0.140 btc</span></div>
                         <div><span>Прибыль: 115%</span></div>
-                        <div>Бонустный апгрейд: 0.10%</div>
-                        <button>Подключиться</button>
+                        <div class="upgrade">
+                            <span>Бонустный апгрейд: 0.10%</span>
+                            <a href="">Подключиться</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,7 +124,7 @@
         <div class="container">
             <div class="calc_left">
                 <div>
-                    <h1>Калькулятор прибыли</h1>
+                    <h2>Калькулятор прибыли</h2>
                     <h4>Расчитайте свою прибыль</h4>
                 </div>
                 <form action="">
@@ -150,17 +157,18 @@
 
             </div>
             <div class="calc_right">
-                <div>
-                    <h2>Ваша прибыль:</h2>
+                <div class="profit">
+                    <h3>Ваша прибыль:</h3>
                     <span>120.59$</span>
                 </div>
-                <div class="connect_calc"><span class="icon-telegram"><a href="">Подключиться</a></span></div>
+                <div class="connect"><span class="icon-telegram"></span><a href="">Подключиться</a></div>
             </div>
         </div>
     </div>
     <div class="certificate">
         <div class="container">
-            <div>
+            <div class="certTitle">
+                <span>BBI</span>
                 <h2>Business bot incubator</h2>
                 <h4>Мир инновационных технологий!</h4>
             </div>
@@ -183,7 +191,7 @@
                         и процветание.</p>
                 </div>
                 <div>
-                    <img src="#" alt="сертификат">
+                    <img src="img/jpg/sert.jpg" alt="сертификат">
                 </div>
             </div>
         </div>
@@ -192,31 +200,32 @@
         <div class="container">
             <div>
                 <div>
-                    <h1>Преимущества компании</h1>
+                    <h2>Преимущества компании</h2>
                     <h4>Почему выбирают нас?</h4>
                 </div>
                 <div>
-                    <p>Инвестиции в BBI выгодно</p>
+                    <h3>Инвестиции в BBI выгодно отличаются от интернет-инвестиций в другие программы. </h3>
                     <p>Здесь о Ваших средствах заботятся и грамотно ими управляют уникальные BBI-боты.
-                        Каждый BBI-бот оснащён бонусным апгрейдом;
+                        Каждый BBI-бот оснащён бонусным апгрейдом,
                         который способствует увеличению получаемой прибыли!</p>
                 </div>
             </div>
             <div>
-                <ul>
+                <ul class="advLeft">
                     <li><span>УНИКАЛЬНЫЕ ИНВЕСТИЦИОННЫЕ БОТЫ</span><span class="icon-robot"></span></li>
                     <li><span>ПАРТНЕРСКАЯ ПРОГРАММА ДО 10%</span><span class="icon-peoples"></span></li>
                     <li><span>НАЧИСЛЕНИЯ КАЖДЫЕ 24 ЧАСА</span><span class="icon-ring"></span></li>
                 </ul>
                 <div class="phoneAdv">
                     <div class="logo">
-                        <div>
+                        <img src="img/png/logoLetters.png" alt="">
+                        <div class="logoWords">
                             <img src="" alt="">
                             <span>BUSINESS</span><span>BOT</span><span>INCUBATOR</span>
                         </div>
                     </div>
                 </div>
-                <ul>
+                <ul class="advRight">
                     <li><span class="icon-gear"></span><span>КВАЛИФИЦИРОВАННАЯ ПОДДЕРЖКА</span></li>
                     <li><span class="icon-pocket"></span><span>ВЫВОД СРЕДСТВ В РЕЖИМЕ ИНСТАНТ</span></li>
                     <li><span class="icon-lines_adv"></span><span>ВОЗМОЖНОСТЬ УВЕЛИЧЕНИЯ ПРИБЫЛИ</span></li>
@@ -227,7 +236,7 @@
     <div class="affiliate">
         <div class="container">
             <div>
-                <h1>Партнерская программа</h1>
+                <h2>Партнерская программа</h2>
                 <div class="affItems">
                     <ul>
                         <li><p>Размер реферальных начислений на начальном этапе составляет
@@ -239,7 +248,7 @@
                             начислений на 1%, максимальная отметка достигает <span>10%</span></p></li>
                     </ul>
                 </div>
-                <div class="connect_calc"><span class="icon-telegram"><a href="">Подключиться</a></span></div>
+                <div class="connect"><span class="icon-telegram"></span><a href="">Подключиться</a></div>
             </div>
         </div>
     </div>
@@ -252,8 +261,8 @@
                 </div>
                 <div class="news_list">
                     <div class="current_news">
-                        <span class="date">11 Ноя</span>
-                        <h4>Линия бесконечности. Разделение депозитов.</h4>
+                        <span class="date">11 <span class="month">Ноя</span></span>
+                        <h3>Линия бесконечности. Разделение депозитов.</h3>
                         <p>В процессе изучения новых программных кодов, Ботами была освоена новая ветка депозитов!...
                             <a href="#">Подробнее ></a></p>
                         <span class="icon-robot"></span><span>Ваш бот BBI</span>
@@ -261,8 +270,8 @@
                     <div class="newsItems">
                         <div class="first_news">
                             <div>
-                                <span class="date">07 Ноя</span>
-                                <h4>Новый бот BIT. Партнерская программа.</h4>
+                                <span class="date">07 <span class="month">Ноя</span></span>
+                                <h3>Новый бот BIT. Партнерская программа.</h3>
                                 <span class="icon-robot"></span><span>Ваш бот BBI</span>
                             </div>
                             <div>
@@ -275,8 +284,8 @@
                         </div>
                         <div class="second_news">
                             <div>
-                                <span class="date">02 Ноя</span>
-                                <h4>Ссылки.Чат Eng.Раздел</h4>
+                                <span class="date">02 <span class="month">Ноя</span></span>
+                                <h3>Ссылки.Чат Eng.Раздел</h3>
                                 <span class="icon-robot"></span><span>Ваш бот BBI</span>
                             </div>
                             <div>
@@ -284,8 +293,8 @@
                         </div>
                         <div class="third_news">
                             <div>
-                                <span class="date">31 окт</span>
-                                <h4>Business Bot Incubator</h4>
+                                <span class="date">31 <span class="month">Окт</span></span>
+                                <h3>Business Bot Incubator</h3>
                                 <span class="icon-robot"></span><span>Ваш бот BBI</span>
                             </div>
                             <div>
@@ -293,7 +302,9 @@
                         </div>
                     </div>
                 </div>
-                <button>Все новости</button>
+                <div class="moreNews connect">
+                    <a href="#">ВСЕ НОВОСТИ</a>
+                </div>
             </div>
         </div>
     </div>
@@ -312,7 +323,7 @@
 </div>
 <footer>
     <div class="container">
-        <div class="connect_calc"><span class="icon-telegram"><a href="">Подключиться</a></span></div>
+        <div class="connect"><span class="icon-telegram"><a href="">Подключиться</a></span></div>
         <div class="copyright">
             <div class="logo">
                 <div>
@@ -347,7 +358,7 @@
                     </li>
                     <li>
                         <span class="icon-mail-envelope-closed"></span><span>E-mail:<br></span>
-                        <spanp>support@bbi.world</spanp>
+                        <span>support@bbi.world</span>
                     </li>
                     <li>
                         <span class="icon-vk"></span><span>Vkontakte:<br></span>
@@ -374,6 +385,7 @@
         </div>
     </div>
     <div class="menu">
+        <div class="container">
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="news.html">Новости</a></li>
@@ -381,6 +393,7 @@
             <li><a href="partners.html">Партнерам</a></li>
             <li><a href="faq.html">FAQ</a></li>
         </ul>
+        </div>
     </div>
 </footer>
 </body>
