@@ -91,6 +91,10 @@ div+h1 {
 .rates{
     height: 927px;
 }
+.line{
+    display: block;
+    float: left;
+}
 .firstLine {
     font-weight: 500;
     font-size: 17px;
@@ -119,6 +123,11 @@ div+h1 {
 }
 .cardHeader4 {
     color: #4fceff;
+}
+
+.card {
+    float: left;
+    display: block;
 }
 .card .percent  {
     font-family: Roboto;
