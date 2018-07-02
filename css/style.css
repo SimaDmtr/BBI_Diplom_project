@@ -222,7 +222,6 @@ div + h1 {
 .line:nth-child(1) {
     background-color: #6980f0;
 }
-<<<<<<< HEAD
 
 .line:nth-child(2) {
     background-color: #af82f6;
@@ -232,12 +231,6 @@ div + h1 {
     background-color: #4fceff;
 }
 
-=======
-.line{
-    display: block;
-    float: left;
-}
->>>>>>> origin/master
 .firstLine {
     font-weight: 500;
     font-size: 17px;
@@ -319,16 +312,12 @@ div + h1 {
 .card:nth-child(4) .cardHeader {
     color: #4fceff;
 }
-<<<<<<< HEAD
-.card .percent {
-=======
 
 .card {
     float: left;
     display: block;
 }
 .card .percent  {
->>>>>>> origin/master
     font-family: Roboto;
     font-weight: 900;
     padding: 30px;
