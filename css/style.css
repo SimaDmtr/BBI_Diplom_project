@@ -7,6 +7,11 @@ body {
     font-family: "Geometria";
     background-color: #f0f4f7;
     color: #1f2847;
+    max-width: 1920px;
+    min-width: 1200px;
+}
+.bodyWrap{
+    overflow: hidden
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -194,6 +199,7 @@ div + h1 {
     display: table-cell;
     width: 33.3333%;
     cursor: pointer;
+
     height: inherit;
     text-align: center;
     padding-top: 42px;
@@ -201,19 +207,22 @@ div + h1 {
     -moz-box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
     box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
     position: relative;
+    z-index: 4;
 }
 
 .line:nth-child(1):after {
     content: '';
     display: block;
     position: absolute;
-    bottom: 71px;
+    bottom: 22px;
+    z-index: 3;
     left: 50%;
-    background: url("../img/png/main_header_lines_right2.png"),
+    background: url("../img/png/main_header_lines_right2.png")no-repeat,
     url("../img/png/main_header_lines_right5.png") no-repeat;
-    height: 299px;
+    height: 347px;
     width: 1628px;
 }
+
 
 .line span {
     display: block;
