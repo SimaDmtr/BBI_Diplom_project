@@ -226,10 +226,22 @@ div + h1 {
     clip-path: polygon(50% 100%, 0 0, 100% 0);
     height: 23px;
     width: 46px;
-    background: red;
     left: calc(50% - 23px);
     bottom: -23px;
+    -webkit-box-shadow: inset -39px -31px 48px -32px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -39px -31px 48px -32px rgba(0,0,0,0.75);
+    box-shadow: inset -39px -31px 48px -32px rgba(0,0,0,0.75);
 }
+.line:nth-child(1):before{
+    background: #4756a2;
+}
+.line:nth-child(2):before{
+    background: #7355a1;
+}
+.line:nth-child(3):before{
+    background: #3487a7;
+}
+
 .line:nth-child(2):after {
     content: '';
     position: absolute;
