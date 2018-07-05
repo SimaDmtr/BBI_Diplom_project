@@ -10,6 +10,22 @@ body {
     max-width: 1920px;
     min-width: 1200px;
 }
+@keyframes arrow {
+    from, to{
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    100% {
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
 .bodyWrap{
     overflow: hidden
 }
@@ -205,20 +221,9 @@ div + h1 {
     -webkit-box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
     box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
-    z-index: 999;
     position: relative;
+}
 
-}
-.line:nth-child(1):after {
-    content: '';
-    position: absolute;
-    background-image: url("../img/png/main_header_lines_right2.png");
-    left: 50%;
-    top: -217px;
-    width: 1628px;
-    height: 535px;
-    z-index: 2;
-}
 .line:before{
     content: '';
     position: absolute;
@@ -234,12 +239,28 @@ div + h1 {
 }
 .line:nth-child(1):before{
     background: #4756a2;
+    display: none;
+}
+.line:nth-child(1):hover:before,.line:nth-child(2):hover:before,.line:nth-child(3):hover:before{
+    display: block;
 }
 .line:nth-child(2):before{
     background: #7355a1;
+    display: none;
 }
 .line:nth-child(3):before{
     background: #3487a7;
+    display: none;
+}
+.line:nth-child(1):after {
+    content: '';
+    position: absolute;
+    background-image: url("../img/png/main_header_lines_right2.png");
+    left: 50%;
+    top: -217px;
+    width: 1628px;
+    height: 535px;
+
 }
 
 .line:nth-child(2):after {
@@ -250,7 +271,7 @@ div + h1 {
     top: -139px;
     width: 1130px;
     height: 573px;
-    z-index: 2;
+
 }
 
 .line:nth-child(3):after {
@@ -261,7 +282,6 @@ div + h1 {
     top: -217px;
     width: 1628px;
     height: 299px;
-    z-index: 2;
 }
 
 .line span {
@@ -314,6 +334,7 @@ div + h1 {
     display: grid;
     grid-template-rows: 138px 121px auto;
     text-align: center;
+
 }
 .cardsWrapper{
     display: grid;
@@ -321,6 +342,7 @@ div + h1 {
     grid-auto-rows: minmax(539px,max-content);
     grid-gap: 31px;
     margin-top: 132px;
+
 }.card span{
      vertical-align: middle;
  }
