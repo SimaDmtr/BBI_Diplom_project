@@ -190,12 +190,10 @@ div + h1 {
 
 /*3 блока выбора линий начало*/
 .lineItems {
-    height: 152px;
+    height: 130px;
     margin-top: -130px;
     display: table;
     width: 100%;
-    z-index: 5;
-    position: relative;
 }
 .line {
     display: table-cell;
@@ -207,22 +205,51 @@ div + h1 {
     -webkit-box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
     box-shadow: inset -33px -33px 153px -36px rgba(0, 0, 0, 0.75);
+    z-index: 999;
     position: relative;
-    z-index: 4;
+
+}
+.line:nth-child(1):after {
+    content: '';
+    position: absolute;
+    background-image: url("../img/png/main_header_lines_right2.png");
+    left: 50%;
+    top: -217px;
+    width: 1628px;
+    height: 535px;
+    z-index: 2;
+}
+.line:before{
+    content: '';
+    position: absolute;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    height: 23px;
+    width: 46px;
+    background: red;
+    left: calc(50% - 23px);
+    bottom: -23px;
+}
+.line:nth-child(2):after {
+    content: '';
+    position: absolute;
+    background-image: url("../img/png/main_header_lines_right3.png");
+    left: 50%;
+    top: -139px;
+    width: 1130px;
+    height: 573px;
+    z-index: 2;
 }
 
-.line:nth-child(1):before {
-     content: url("../img/png/main_header_lines_right2.png");
-     position: absolute;
-     left: 50%;
-     bottom:65px;
- }
-.line:nth-child(1):after {
-    content: url("../img/png/main_header_lines_right5.png");
+.line:nth-child(3):after {
+    content: '';
     position: absolute;
+    background-image: url("../img/png/main_header_lines_right1.png");
     left: 50%;
-    top: -212px;
-    z-index: -999;
+    top: -217px;
+    width: 1628px;
+    height: 299px;
+    z-index: 2;
 }
 
 .line span {
@@ -296,11 +323,11 @@ div + h1 {
  .card:nth-child(1) .upgrade div{
      background-color: #637ae2;
  }
-.ratesItems .cardName {
+.card .cardName {
     font-size: 17px;
     font-weight: 500;
 }
-.ratesItems span[class='icon-robot']{
+.card span[class='icon-robot']{
     font-size: 60px;
     margin-top: 16px;
 }
@@ -321,11 +348,6 @@ div + h1 {
 }
 .card:nth-child(4) .cardHeader {
     color: #4fceff;
-}
-
-.card {
-    float: left;
-    display: block;
 }
 .card .percent  {
     font-family: Roboto;
