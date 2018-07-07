@@ -233,13 +233,15 @@ header .logo {
     margin: 158px auto 0px;
     position: relative;
 }
-.bannerWrapper{
+
+.bannerWrapper {
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
 }
+
 .banner:before,
 .banner:after,
 .bannerWrapper:before,
@@ -250,6 +252,7 @@ header .logo {
     content: '';
     border: solid #ffffff;
 }
+
 .banner:before {
     left: 0;
     top: 0;
@@ -261,6 +264,7 @@ header .logo {
     top: 0;
     border-width: 2px 2px 0 0;
 }
+
 .bannerWrapper:before {
     right: 0;
     bottom: 0;
@@ -272,6 +276,7 @@ header .logo {
     bottom: 0;
     border-width: 0 0 2px 2px;
 }
+
 h1 {
     font-size: 33px;
     font-weight: 700;
@@ -610,23 +615,69 @@ h1 > span {
     font-family: Roboto;
     font-weight: 900;
 }
-
-.connectWhite > * {
+/*Кнопка подключиться*/
+.connectWhite {
+    width: 466px;
+    height: 80px;
+    position: relative;
+}
+.connectWhite * {
     font-size: 21px;
-    line-height: 54px;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.connectWhite {
-    border: 1px solid #858eff;
-}
-
 .connectWhite a {
     font-weight: 700;
+    padding-left: 21px;
 }
 
+.connectWrapper {
+    position: absolute;
+    text-align: center;
+    line-height: 80px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.connectWhite:before,
+.connectWhite:after,
+.connectWrapper:before,
+.connectWrapper:after {
+    position: absolute;
+    width: 20px;
+    height: 21px;
+    content: '';
+    border: solid #858eff;
+}
+
+.connectWhite:before {
+    left: 0;
+    top: 0;
+    border-width: 2px 0 0 2px;
+}
+
+.connectWhite:after {
+    right: 0;
+    top: 0;
+    border-width: 2px 2px 0 0;
+}
+
+.connectWrapper:before {
+    right: 0;
+    bottom: 0;
+    border-width: 0 2px 2px 0;
+}
+
+.connectWrapper:after {
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 2px 2px;
+}
+/*Кнопка подключиться конец*/
 /*Калькулятор конец*/
 
 /*Сертификат начало*/
@@ -873,10 +924,6 @@ footer {
     background-color: #1f2847;
 }
 
-footer .menu {
-    background-color: #151b33;
-}
-
 footer .connect * {
     color: #ffffff;
     font-size: 21px;
@@ -943,4 +990,23 @@ footer .social .row3 {
 
 .referralItems p {
     color: #9da4bd;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: row;
+    line-height: 14px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 37px;
+    left: 683px;
+    right: 0;
+}
+footer .menu li{
+    margin: 0 5px 0 0;
+}
+.menuFooter {
+    background-color: #151b33;
+    height: 96px;
+    position: relative;
 }
