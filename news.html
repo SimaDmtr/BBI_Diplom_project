@@ -5,17 +5,24 @@
     <title>News</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-<header>
+<header class="sitesHeader">
     <div class="container">
-        <div class="topHeader cfix">
-            <div class="logo cfix">
+        <div class="topHeader">
+            <div class="logo invisLink">
                 <img src="img/png/logoLetters.png" alt="">
                 <div class="logoWords">
                     <span>BUSINESS<br></span><span>BOT<br></span><span>INCUBATOR</span>
                 </div>
+                <a href="main.html">Главная</a>
             </div>
             <ul class="menu">
                 <li><a href="main.html">Главная</a></li>
@@ -25,49 +32,68 @@
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
             <div class="langConnect">
-                <div class="lang" style="background-image: url(img/jpg/rus.jpg)">
+                <div class="lang">
+                    <div class="langitem activelang"><a>RU</a></div>
+                    <div id="slideDown">
+                        <div class="langitem ch"><a>CH</a></div>
+                        <div class="langitem en"><a>EN</a></div>
+                    </div>
                 </div>
                 <div class="connect">
                     <span class="icon-telegram"></span><a href="#">Подключиться</a>
                 </div>
             </div>
         </div>
-        <div class="banner">
-            <h1>НОВОСТИ</h1>
+        <div class="sitesTitleWrapper">
+            <div class="sitesTitle">
+                <div class="sitesBorder">
+                    <h1>Новости</h1>
+                </div>
+            </div>
         </div>
     </div>
 </header>
 <div class="content">
-    <div class="news newsMore">
-        <div class="container">
-            <h2>Новости BBI</h2>
-            <div class="newsList">
-                <div class="newsItem1">
-                    <div>
-                        <span class="date">07<span>Ноя</span></span>
-                        <h3>Новый бот BIT. Партнерская программа.</h3>
-                        <span class="icon-robot"></span><span>Ваш бот BBI</span>
+    <div class="newsSite">
+        <div class="container" id="tabs">
+            <div class="topContent">
+                <h2>Новости BBI</h2>
+            </div>
+            <ul class="navPages">
+                <li class="pagesArrows"><</li>
+                <li><a href="#tabs-1">1</a></li>
+                <li><a href="#tabs-2">2</a></li>
+                <li><a href="#tabs-3">3</a></li>
+                <li><a href="#tabs-4">4</a></li>
+                <li class="pagesArrows">></li>
+            </ul>
+            <ul class="newsList newsListSite" id="tabs-1">
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
                     </div>
-                    <div>
+                    <div class="newsContent">
                         <p>В процессе изучения новых программных кодов, Ботами была освоена новая ветка депозитов! Все
-                            депозиты
-                            разделены на две Линии. Благодаря воссоединению освоенных кодов, Боты открыли сразу 4 новых
-                            плана с
-                            бессрочными депозитами! Все депозиты теперь разделены на две линии: Линия Прибыли и Линия
-                            Бесконечности. Линия прибыли имеет депозиты с возвратом тела вклада в конце срока, а Линия
-                            бесконечности располагает депозитами с бессрочными планами. Актуальные процентные ставки и
-                            суммы
-                            отображаются после выбора необходимой Линии в разделе “Создать депозитную плату”.</p>
+                            депозиты разделены на две Линии. Благодаря воссоединению освоенных кодов, Боты открыли сразу
+                            4
+                            новых плана с бессрочными депозитами! Все депозиты теперь разделены на две линии: Линия
+                            Прибыли
+                            и Линия Бесконечности. Линия прибыли имеет депозиты с возвратом тела вклада в конце срока, а
+                            Линия бесконечности располагает депозитами с бессрочными планами. Актуальные процентные
+                            ставки и
+                            суммы отображаются после выбора необходимой Линии в разделе “Создать депозитную плату”.</p>
                         <p>Продолжается изучение новых программных кодов для внешних изменений!</p>
                     </div>
-                </div>
-                <div class="newsItem2">
-                    <div>
-                        <span class="date">07<span>Ноя</span></span>
-                        <h3>Новый бот BIT. Партнерская программа.</h3>
-                        <span class="icon-robot"></span><span>Ваш бот BBI</span>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
                     </div>
-                    <div>
+                    <div class="newsContent">
                         <p>Сегодня совместными усилиями Боты завершили все части и наброски программных кодов, в течении
                             их
                             напряженной работы проявлалось что-то нечто яркого цвета, в итоге объединения программного
@@ -76,96 +102,297 @@
                             названием BIT. Новый Бот работает по своему собственному тарифу и принимает исключительно
                             только
                             валюту Bitcoin. Как сообщается, это было разработано для удобства участников системы BBI.
-                            Этот Бот
-                            принимает и выплачивает непосредственно только Bitcoin, прежние боты TEST, POWER и ULTIMATUM
+                            Этот
+                            Бот принимает и выплачивает непосредственно только Bitcoin, прежние боты TEST, POWER и
+                            ULTIMATUM
                             отказались от приема и вывода данной валюты для работы, независящей от курса Bitcoin!
-                            Инвесторов,
-                            раннее создавших депозит через систему Bitcoin, просим совершать вывод средств в любые
-                            доступные
-                            платежные системы, т.к. управление системой Bitcoin полностью передано в руки бота BIT.
-
-                            Стоит заметить и тот момент, что была изменена партнерская программа, удален рандомный
-                            режим. Теперь
-                            система BBI работает по фиксированному партнерскому проценту в размере 5%. С каждым оборотом
-                            Ваших
-                            партнеров в 500$ процент увеличивается на 1% и достигает максимальной отметки </p>
+                            Инвесторов, раннее создавших депозит через систему Bitcoin, просим совершать вывод средств в
+                            любые доступные платежные системы, т.к. управление системой Bitcoin полностью передано в
+                            руки
+                            бота BIT.</p>
                         <p>Стоит заметить и тот момент, что была изменена партнерская программа, удален рандомный режим.
-                            Теперь
-                            система BBI работает по фиксированному партнерскоCму проценту в размере 5%. С каждым
-                            оборотом Ваших
-                            партнеров в 500$ процент увеличивается на 1% и достигает максимальной отметки 10%!</p>
+                            Теперь система BBI работает по фиксированному партнерскому проценту в размере 5%. С каждым
+                            оборотом Ваших партнеров в 500$ процент увеличивается на 1% и достигает максимальной отметки
+                            10%!</p>
                     </div>
-                </div>
-                <div class="newsItem3">
-                    <div>
-                        <span class="date">07<span>Ноя</span></span>
-                        <h3>Новый бот BIT. Партнерская программа.</h3>
-                        <span class="icon-robot"></span><span>Ваш бот BBI</span>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
                     </div>
-                    <div>
-                        <img src="img/jpg/telegram.jpg" alt="">
-                        <div>
-                            <p>Боты освоили прием приглашенных партнеров напрямую! Теперь у каждого пользователя есть
-                                две
-                                реферальные ссылки, одна из них ведет приглашенного на сайт, а другая сразу на
-                                подключение к
-                                Боту!</p>
-                            <p>Открыт новый BBI чат для англоязычных граждан! Прямая ссылка:
-                                https://telegram.me/joinchat/EBrwo0AbMz7YFtCTKRKmIQ</p>
-                            <p>Добавлен новый раздел в личном кабинете, в котором расположены все необходимые ссылки:
-                                Навигация
-                                - Ссылки - Контакты. </p>
-                        </div>
+                    <div class="newsContent">
+                        <div class="telegram"><img src="img/jpg/telegram.jpg" alt=""></div>
+                        <p>Боты освоили прием приглашенных партнеров напрямую! Теперь у каждого пользователя есть две
+                            реферальные ссылки, одна из них ведет приглашенного на сайт, а другая сразу на подключение к
+                            Боту!</p>
+
+                        <p>Открыт новый BBI чат для англоязычных граждан! Прямая ссылка:<br>
+                            https://telegram.me/joinchat/EBrwo0AbMz7YFtCTKRKmIQ</p>
+
+                        <p>Добавлен новый раздел в личном кабинете, в котором расположены все необходимые ссылки:
+                            Навигация - Ссылки - Контакты. </p>
                     </div>
-                </div>
-                <div class="newsItem4">
-                    <div>
-                        <span class="date">07<span>Ноя</span></span>
-                        <h3>Новый бот BIT. Партнерская программа.</h3>
-                        <span class="icon-robot"></span><span>Ваш бот BBI</span>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
                     </div>
-                    <div>
+                    <div class="newsContent">
                         <p>Мы запустили инновационную структуру заработка. С этого дня больше не нужно переживать о том,
                             какое направление инвестиций Вам выбрать. Наши роботы BBI выберут ваше направление за Вас.
-                            Вам
-                            лишь нужно вписать сумму вашего инвестирования и наслаждаться полноценной жизнью! Business
-                            Bot
-                            Incubator - это инновация будущего! Занимай места вместе с нами. </p>
+                            Вам лишь нужно вписать сумму вашего инвестирования и наслаждаться полноценной жизнью!
+                            Business Bot Incubator - это инновация будущего! Занимай места вместе с нами. </p>
                     </div>
-                </div>
-            </div>
-            <div class="navPages">
-                <ul>
-                    <li><</li>
-                    <li>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
-                    </li>
-                    <li>></li>
-                </ul>
-            </div>
+                </li>
+            </ul>
+            <ul class="newsList newsListSite" id="tabs-2">
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores assumenda
+                            commodi debitis, facilis illo ipsa ipsum iusto magnam nulla possimus quam quas repellendus
+                            sint soluta veritatis voluptatum! Deserunt, exercitationem.</p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda deleniti
+                            dolores earum enim excepturi necessitatibus vel? Debitis, deleniti dolorum facilis molestiae
+                            odit quam quasi quis quo quos sed, sunt.Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aliquam amet aut autem beatae
+                            consequatur corporis dignissimos dolores est eveniet excepturi facere iste laudantium magni
+                            quas, qui reiciendis sed voluptate? Illo!</p>
+                        <p>Consectetur adipisicing elit. Accusantium assumenda deleniti
+                            dolores earum enim excepturi necessitatibus vel? Debitis, deleniti dolorum facilis molestiae
+                            odit quam quasi quis quo quos sed, sunt.Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aliquam amet aut</p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <div class="telegram"><img src="img/jpg/telegram.jpg" alt=""></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium ad aliquid animi</p>
+
+                        <p>It voluptatem. Accusantium amet cum dicta eaque est possimus, sapiente veritatis voluptates?</p>
+
+                        <p>Добавлен новый раздел в личном кабинете, в котором расположены все необходимые ссылки:
+                            Навигация - Ссылки - Контакты. </p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>Мы запустили инновационную структуру заработка. С этого дня больше не нужно переживать о том,
+                            какое направление инвестиций Вам выбрать. Наши роботы BBI выберут ваше направление за Вас.
+                            Вам лишь нужно вписать сумму вашего инвестирования и наслаждаться полноценной жизнью!
+                            Business Bot Incubator - это инновация будущего! Занимай места вместе с нами. </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="newsList newsListSite" id="tabs-3">
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>В процессе изучения новых программных кодов, Ботами была освоена новая ветка депозитов! Все
+                            депозиты разделены на две Линии. Благодаря воссоединению освоенных кодов, Боты открыли сразу
+                            4
+                            новых плана с бессрочными депозитами! Все депозиты теперь разделены на две линии: Линия
+                            Прибыли
+                            и Линия Бесконечности. Линия прибыли имеет депозиты с возвратом тела вклада в конце срока, а
+                            Линия бесконечности располагает депозитами с бессрочными планами. Актуальные процентные
+                            ставки и
+                            суммы отображаются после выбора необходимой Линии в разделе “Создать депозитную плату”.</p>
+                        <p>Продолжается изучение новых программных кодов для внешних изменений!</p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>Сегодня совместными усилиями Боты завершили все части и наброски программных кодов, в течении
+                            их
+                            напряженной работы проявлалось что-то нечто яркого цвета, в итоге объединения программного
+                            кода
+                            воссоздался некто... Боты представляют Вашему вниманию нового инвестиционного робота BBI под
+                            названием BIT. Новый Бот работает по своему собственному тарифу и принимает исключительно
+                            только
+                            валюту Bitcoin. Как сообщается, это было разработано для удобства участников системы BBI.
+                            Этот
+                            Бот принимает и выплачивает непосредственно только Bitcoin, прежние боты TEST, POWER и
+                            ULTIMATUM
+                            отказались от приема и вывода данной валюты для работы, независящей от курса Bitcoin!
+                            Инвесторов, раннее создавших депозит через систему Bitcoin, просим совершать вывод средств в
+                            любые доступные платежные системы, т.к. управление системой Bitcoin полностью передано в
+                            руки
+                            бота BIT.</p>
+                        <p>Стоит заметить и тот момент, что была изменена партнерская программа, удален рандомный режим.
+                            Теперь система BBI работает по фиксированному партнерскому проценту в размере 5%. С каждым
+                            оборотом Ваших партнеров в 500$ процент увеличивается на 1% и достигает максимальной отметки
+                            10%!</p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <div class="telegram"><img src="img/jpg/telegram.jpg" alt=""></div>
+                        <p>Боты освоили прием приглашенных партнеров напрямую! Теперь у каждого пользователя есть две
+                            реферальные ссылки, одна из них ведет приглашенного на сайт, а другая сразу на подключение к
+                            Боту!</p>
+
+                        <p>Открыт новый BBI чат для англоязычных граждан! Прямая ссылка:<br>
+                            https://telegram.me/joinchat/EBrwo0AbMz7YFtCTKRKmIQ</p>
+
+                        <p>Добавлен новый раздел в личном кабинете, в котором расположены все необходимые ссылки:
+                            Навигация - Ссылки - Контакты. </p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>Мы запустили инновационную структуру заработка. С этого дня больше не нужно переживать о том,
+                            какое направление инвестиций Вам выбрать. Наши роботы BBI выберут ваше направление за Вас.
+                            Вам лишь нужно вписать сумму вашего инвестирования и наслаждаться полноценной жизнью!
+                            Business Bot Incubator - это инновация будущего! Занимай места вместе с нами. </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="newsList newsListSite" id="tabs-4">
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>В процессе изучения новых программных кодов, Ботами была освоена новая ветка депозитов! Все
+                            депозиты разделены на две Линии. Благодаря воссоединению освоенных кодов, Боты открыли сразу
+                            4
+                            новых плана с бессрочными депозитами! Все депозиты теперь разделены на две линии: Линия
+                            Прибыли
+                            и Линия Бесконечности. Линия прибыли имеет депозиты с возвратом тела вклада в конце срока, а
+                            Линия бесконечности располагает депозитами с бессрочными планами. Актуальные процентные
+                            ставки и
+                            суммы отображаются после выбора необходимой Линии в разделе “Создать депозитную плату”.</p>
+                        <p>Продолжается изучение новых программных кодов для внешних изменений!</p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>Сегодня совместными усилиями Боты завершили все части и наброски программных кодов, в течении
+                            их
+                            напряженной работы проявлалось что-то нечто яркого цвета, в итоге объединения программного
+                            кода
+                            воссоздался некто... Боты представляют Вашему вниманию нового инвестиционного робота BBI под
+                            названием BIT. Новый Бот работает по своему собственному тарифу и принимает исключительно
+                            только
+                            валюту Bitcoin. Как сообщается, это было разработано для удобства участников системы BBI.
+                            Этот
+                            Бот принимает и выплачивает непосредственно только Bitcoin, прежние боты TEST, POWER и
+                            ULTIMATUM
+                            отказались от приема и вывода данной валюты для работы, независящей от курса Bitcoin!
+                            Инвесторов, раннее создавших депозит через систему Bitcoin, просим совершать вывод средств в
+                            любые доступные платежные системы, т.к. управление системой Bitcoin полностью передано в
+                            руки
+                            бота BIT.</p>
+                        <p>Стоит заметить и тот момент, что была изменена партнерская программа, удален рандомный режим.
+                            Теперь система BBI работает по фиксированному партнерскому проценту в размере 5%. С каждым
+                            оборотом Ваших партнеров в 500$ процент увеличивается на 1% и достигает максимальной отметки
+                            10%!</p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <div class="telegram"><img src="img/jpg/telegram.jpg" alt=""></div>
+                        <p>Боты освоили прием приглашенных партнеров напрямую! Теперь у каждого пользователя есть две
+                            реферальные ссылки, одна из них ведет приглашенного на сайт, а другая сразу на подключение к
+                            Боту!</p>
+
+                        <p>Открыт новый BBI чат для англоязычных граждан! Прямая ссылка:<br>
+                            https://telegram.me/joinchat/EBrwo0AbMz7YFtCTKRKmIQ</p>
+
+                        <p>Добавлен новый раздел в личном кабинете, в котором расположены все необходимые ссылки:
+                            Навигация - Ссылки - Контакты. </p>
+                    </div>
+                </li>
+                <li class="item_news cfix">
+                    <div class="newsHeader active cfix">
+                        <div class="date"><span class="day">07</span><span class="month">Ноя</span></div>
+                        <div class="newsHeaderTitle"><h3>Новый бот BIT. Партнерская программа.</h3>
+                            <span class="yourRobot"><span class="icon-robot"></span>Ваш бот BBI</span></div>
+                    </div>
+                    <div class="newsContent">
+                        <p>Мы запустили инновационную структуру заработка. С этого дня больше не нужно переживать о том,
+                            какое направление инвестиций Вам выбрать. Наши роботы BBI выберут ваше направление за Вас.
+                            Вам лишь нужно вписать сумму вашего инвестирования и наслаждаться полноценной жизнью!
+                            Business Bot Incubator - это инновация будущего! Занимай места вместе с нами. </p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="payments">
         <div class="container">
-            <div>
-                <ul>
-                    <li><img src="img/png/pay1.png" alt="perfect money"></li>
-                    <li><img src="img/png/pay2.png" alt="payeer"></li>
-                    <li><img src="img/png/pay3.png" alt="bitcoin"></li>
-                    <li><img src="img/png/pay4.png" alt="advcash"></li>
-                </ul>
-            </div>
+            <ul class="payItems">
+                <li><img src="img/png/pay1.png" alt="perfect money"></li>
+                <li><img src="img/png/pay2.png" alt="payeer"></li>
+                <li><img src="img/png/pay3.png" alt="bitcoin"></li>
+                <li><img src="img/png/pay4.png" alt="advcash"></li>
+            </ul>
         </div>
     </div>
 </div>
 <footer>
     <div class="container">
-        <div class="connectWhite"><span class="icon-telegram"></span><a href="">Подключиться</a></div>
+        <div class="connectWhite">
+            <div class="connectWrapper"><span class="icon-telegram"></span><a href="">Подключиться</a></div>
+        </div>
         <div class="topFooter cfix">
             <div class="copyright">
                 <div class="logo invisLink">
@@ -175,62 +402,54 @@
                     </div>
                     <a href="main.html">Главная</a>
                 </div>
-                <div>
                 <span class="footerInfo">
                 Copyright © 2016 - BUSINESS <br>BOT INCUBATOR - Мир <br>инновационных технологий.
                 </span>
-                </div>
             </div>
             <div class="address">
                 <span class="icon-earth row1"></span><span class="footerInfoTitle row1">Address: <br></span>
-                <div>
                 <span class="footerInfo">
                     137, Wilbraham Road Manchester<br>
                     M14 7DS<br>
                     UNITED KINGDOM<br>
                     Registered in UNITED KINGDOM<br>
-                    Number 10416054
-                </span>
-                </div>
+                    Number 10416054<br>
+                    </span>
             </div>
             <div class="social cfix">
-                <div>
-                    <ul>
-                        <li>
-                            <span class="icon-telegram row2"></span><span
-                                class="footerInfoTitle row2">Support team:<br></span>
-                            <span class="footerInfo">@Business_Bot_Incubator</span>
-                        </li>
-                        <li>
-                            <span class="icon-mail-envelope-closed row2"></span><span
-                                class="footerInfoTitle row2">E-mail:<br></span>
-                            <span class="footerInfo">support@bbi.world</span>
-                        </li>
-                        <li>
-                            <span class="icon-vk row2"></span><span
-                                class="footerInfoTitle row2">Vkontakte:<br></span>
-                            <span class="footerInfo">business_bot_incubator</span>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <span class="icon-telegram row3"></span><span
-                                class="footerInfoTitle row3">BBI CHAT RUS:<br></span>
-                            <span class="footerInfo">telegram_ row3bbi_chat_rus</span>
-                        </li>
-                        <li>
-                            <span class="icon-telegram row3"></span><span
-                                class="footerInfoTitle row3">BBI CHAT ENG:<br></span>
-                            <span class="footerInfo">telegram_bbi_chat_eng</span>
-                        </li>
-                        <li>
-                            <span class="icon-telegram row3"></span><span class="footerInfoTitle row3">BBI CHAT ХИНДИ (हिन्दी चैट):<br></span>
-                            <span class="footerInfo">telegram_bbi_chat_eng</span>
-                        </li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>
+                        <span class="icon-telegram row2"></span><span
+                            class="footerInfoTitle row2">Support team:<br></span>
+                        <a href="#" class="footerInfo">@Business_Bot_Incubator</a>
+                    </li>
+                    <li>
+                        <span class="icon-mail-envelope-closed row2"></span><span
+                            class="footerInfoTitle row2">E-mail:<br></span>
+                        <a href="#" class="footerInfo">support@bbi.world</a>
+                    </li>
+                    <li>
+                        <span class="icon-vk row2"></span><span
+                            class="footerInfoTitle row2">Vkontakte:<br></span>
+                        <a href="#" class="footerInfo">business_bot_incubator</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="icon-telegram row3"></span><span
+                            class="footerInfoTitle row3">BBI CHAT RUS:<br></span>
+                        <a href="#" class="footerInfo">telegram_ row3bbi_chat_rus</a>
+                    </li>
+                    <li>
+                        <span class="icon-telegram row3"></span><span
+                            class="footerInfoTitle row3">BBI CHAT ENG:<br></span>
+                        <a href="#" class="footerInfo">telegram_bbi_chat_eng</a>
+                    </li>
+                    <li>
+                        <span class="icon-telegram row3"></span><span class="footerInfoTitle row3">BBI CHAT ХИНДИ (हिन्दी चैट):<br></span>
+                        <a href="#" class="footerInfo">telegram_bbi_chat_eng</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
